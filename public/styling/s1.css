@@ -1,0 +1,131 @@
+body {
+    background-image: url("/images/DALL·E 2024-10-30 21.13.02 - A pop culture-inspired digital artwork featuring a vibrant, urban cityscape at night. Neon lights illuminate skyscrapers with colorful billboards and .webp");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+.box2, .box3 {
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 40vw;
+    max-width: 500px;
+    height: auto;
+    padding: 20px;
+    border: 3px solid springgreen;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.box3 {
+    margin-top: 40px;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+}
+
+.divider {
+    border-left: 2px solid white;
+    height: auto;
+}
+
+.already-user, .seller-info {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.input1, 
+button {
+    background-color: black;
+    color: white;
+    border: 3px solid lightslategray;
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.input1:hover, 
+button:hover {
+    background-color: darkslategray;
+    transform: scale(1.05);
+}
+
+.main_heading {
+    text-align: center;
+    border: 3px solid springgreen;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    font-size: 20px;
+    box-shadow: 0 0 15px rgba(0, 255, 127, 0.6); /* Permanent green glow */
+}
+
+.primary_input {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.primary_input input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+    border: 2px solid transparent; /* Initial border to avoid layout shift */
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.primary_input input:hover {
+    transform: scale(1.05); /* Grows slightly */
+    background-color: rgba(0, 0, 0, 0.8); /* Darkens background on hover */
+    border-color: springgreen; /* Green accent border */
+    box-shadow: 0 0 8px rgba(0, 255, 127, 0.6); /* Soft green glow */
+}
+
+.primary_input input:focus {
+    outline: none;
+    transform: scale(1.05); /* Keeps size on focus as well */
+    border-color: springgreen; /* Consistent green border */
+    box-shadow: 0 0 8px rgba(0, 255, 127, 0.8); /* Slightly stronger green glow on focus */
+}
+
+@media (max-width: 600px) {
+    .box2, .box3 {
+        width: 90vw;
+        padding: 15px;
+    }
+
+    .input1, 
+    button {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .primary_input input {
+        font-size: 14px;
+    }
+
+    .main_heading {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+}
